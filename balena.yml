@@ -1,0 +1,4 @@
+applicationEnvironmentVariables:
+    - TZ: 'Asia/Kuala_Lumpur'
+    - DNSMASQ_LISTENING: 'wlan0'
+    - INTERFACE: 'wlan0'

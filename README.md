@@ -15,8 +15,8 @@ Running this project is as simple as deploying it to a balenaCloud application. 
 
 ## Motivation
 
-![concept](https://raw.githubusercontent.com/balenalabs/balena-sound/master/docs/sound.png)
-![concept](https://raw.githubusercontent.com/balenalabs/balena-sound/master/docs/pihole.png)
+![concept](https://raw.githubusercontent.com/nfl0/Balena-Pihole-BluetoothAudio/master/docs/sound.png)
+![concept](https://raw.githubusercontent.com/nfl0/Balena-Pihole-BluetoothAudio/master/docs/pihole.png)
 
 There are many commercial solutions out there that provide functionality similar to balenaSound. Most of them though come with a premium price tag and are riddled with privacy concerns.
 

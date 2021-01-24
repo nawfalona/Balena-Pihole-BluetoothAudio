@@ -6,12 +6,15 @@
 
 - **Bluetooth**: Stream audio from your smartphone/computer using bluetooth.
 - **Pihole**: Network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server.
+- **Notifer**: LED notifications.
+- **Radicle Seed Node**: always-on node that automatically tracks discovered projects on the radicle network. [TODO - https://docs.radicle.xyz/docs/using-radicle/running-a-seed-node]
+
 
 ## Setup and configuration
 
 Running this project is as simple as deploying it to a balenaCloud application. You can do it in just one click by using the button below:
 
-[![deploy button](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/nfl0/Balena-Pihole-BluetoothAudio&defaultDeviceType=raspberry-pi)
+[![deploy button](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://gitlab.com/nfl0/Balena-Pihole-BluetoothAudio&defaultDeviceType=raspberry-pi)
 
 ## Motivation
 

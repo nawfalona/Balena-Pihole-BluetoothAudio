@@ -20,7 +20,15 @@ services:
     dns:
       - '1.0.0.1'
       - '1.1.1.1'
+  notifier:
+    build: ./notifier
+    restart: on-failure
+    network_mode: host
+    privileged: true
+    volumes:
+      - notifier_config:/etc/notifier
 volumes:
   bluetoothcache:
   pihole_config:
   dnsmasq_config:
+  notifier_config:

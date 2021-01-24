@@ -1,4 +1,25 @@
-applicationEnvironmentVariables:
+version: "2"
+slug: "balena-pihole-blaudio-notifier"
+name: "Pi-hole, bluetooth audio and notifier"
+type: "sw.application"
+assets:
+  - url: "https://gitlab.com/nfl0/balena-pihole-BluetoothAudio"
+    name: "repository"
+data:
+  description: "Pi-hole, Bluetooth audio and notifier, all in one!"
+  applicationEnvironmentVariables:
     - TZ: 'Asia/Kuala_Lumpur'
     - DNSMASQ_LISTENING: 'eth0'
     - INTERFACE: 'eth0'
+    - WEBPASSWORD: 'GyBuwDvR'
+    - DNS1: '127.0.0.1#5053'
+    - DNS2: '127.0.0.1#5053'
+    - FBCP_DISPLAY: ""
+  defaultDeviceType: "raspberrypi3-64"
+  supportedDeviceTypes:
+    - "raspberry-pi2"
+    - "raspberrypi3"
+    - "raspberrypi3-64"
+    - "raspberrypi4-64"
+    - "fincm3"
+    - "nanopi-neo-air"

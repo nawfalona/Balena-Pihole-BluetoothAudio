@@ -1,15 +1,5 @@
 version: '2.1'
 services:
-  bluetooth-audio:
-    build: ./bluetooth-audio
-    restart: on-failure
-    network_mode: host
-    privileged: true
-    labels:
-      io.balena.features.dbus: 1
-    volumes:
-      - bluetoothcache:/var/cache/bluetooth
-      
   pihole:
     build: ./pihole
     restart: on-failure
@@ -50,8 +40,19 @@ services:
     privileged: true
     volumes:
       - notifier_config:/etc/notifier
+      
+  
+  nodejs-idex-staker:
+    build: ./nodejs-idex-staker
+    restart: on-failure
+    network_mode: host
+    privileged: true
+    volumes:
+      - idex_config:/etc/idexio
+    ports:
+      - "8081:8081/tcp"
 volumes:
-  bluetoothcache:
   pihole_config:
   dnsmasq_config:
   notifier_config:
+  idex_config:

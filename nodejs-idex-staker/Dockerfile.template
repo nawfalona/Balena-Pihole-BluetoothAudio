@@ -1,0 +1,22 @@
+#Nodejs version 14.15.2
+#YARN_VERSION=1.22.5
+
+FROM balenalib/raspberrypi3-node:14.15-build
+
+USER root
+
+COPY ./staking-replicator /home/staking-replicator
+
+WORKDIR /home/staking-replicator
+
+RUN rm -rf package-lock.json \
+    && rm -rf node_modules \
+    && npm install \
+    && yarn install --frozen-lockfile --no-cache \
+    && yarn build \
+    && rm -rf src \
+    && rm -rf node_modules \
+    && yarn install --production \
+    && yarn cache clean
+
+CMD node /home/staking-replicator/dist/src/index.js
